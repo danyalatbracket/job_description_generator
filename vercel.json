@@ -1,0 +1,20 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "functions": {
+    "api/*.py": {
+      "runtime": "vercel-python@latest",
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  },
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "api/flask_app.py",
+      "destination": "/api/index",
+      "permanent": false
+    }
+  ],
+  "public": true
+}
