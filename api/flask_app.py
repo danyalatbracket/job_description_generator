@@ -15,7 +15,7 @@ import sys  # To exit if model loading fails
 # --- Configuration ---
 # Get configuration from environment variables
 # Make sure to set this environment variable or replace the default value
-TOKEN = ""
+TOKEN = "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"
 if not TOKEN or not TOKEN.startswith("hf_"):
     print("WARNING: HUGGINGFACE_API_TOKEN environment variable is not set or invalid")
 
