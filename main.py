@@ -43,9 +43,9 @@ app.add_middleware(
 )
 
 # --- Global variable to hold the loaded LLM and Prompt ---
-# # These will be populated during startup
-# llm: Optional[HuggingFaceEndpoint] = None
-# prompt_template: Optional[PromptTemplate] = None
+# These will be populated during startup
+llm: Optional[HuggingFaceEndpoint] = None
+prompt_template: Optional[PromptTemplate] = None
 
 
 # --- LLM Loading Function (updated to use HuggingFaceEndpoint) ---
@@ -415,7 +415,7 @@ if __name__ == "__main__":
     # Use reload=True for development (similar to Flask's debug=True)
     print("Starting FastAPI server with Uvicorn...")
     uvicorn.run(
-        "flask_app:app", host="0.0.0.0", port=9000, reload=True, log_level="info"
+        "main:app", host="0.0.0.0", port=9000, reload=True, log_level="info"
     )
     # For production, you would typically run:
     # uvicorn main:app --host 0.0.0.0 --port 5000 --workers 4
