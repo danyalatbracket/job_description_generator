@@ -3,7 +3,5 @@ venv_job_desc/
 .venv_job_desc/
 venv/
 __pycache__/
-.vercel
-vercel.json
 .vercelignore
 vercel
