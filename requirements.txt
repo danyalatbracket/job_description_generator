@@ -4,3 +4,4 @@ pydantic
 langchain_huggingface
 langchain_community
 langchain_core
+mangum
